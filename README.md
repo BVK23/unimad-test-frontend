@@ -1,34 +1,53 @@
-# Unimad Frontend V1
+# Unimad Dev Task
 
-This is a Next.js project and uses inline Tailwind CSS.
+This is a Next.js project that uses inline Tailwind CSS.
 
-Default package manager is Pnpm.
+## Prerequisites
 
-# Node
+- Node.js Version > 18.0.0
+- PNPM Package Manager
 
-Node Version is > 18.0.0
+## Important Notes
 
-# To Start Project
+- This frontend project requires the backend server to be running for full functionality
+- Without the backend, only the landing page will be accessible due to authentication requirements
+- If you're not attempting Stage 3 of the task, you can skip running this frontend and just reference the starter design for the first page
 
-Install the pnpm by `npm install -g pnpm`
+## Backend Setup
 
+1. Clone the backend repository:
+```bash
+git clone https://github.com/BVK23/unimad-test-backend
 ```
-1. pnpm install
-2. pnpm build
-3. pnpm start
+2. Follow the setup instructions in the backend repository's README
+
+## Frontend Setup
+
+1. Install PNPM if you haven't already:
+```bash
+npm install -g pnpm
 ```
 
-or
-
-```
-1. pnpm install
-2. pnpm dev
+2. Install dependencies:
+```bash
+pnpm install
 ```
 
-Your cover picture needs to be attractive and expressive at the same time. It should make anyone scroll down to check your profile.
+3. Start the development server:
+```bash
+pnpm dev
+```
 
-- Choose a minimalist design that says, “Here’s what I excel at”.
+4. Access the application at `http://localhost:3000`
 
-- You can also insert a quote that you resonate a lot with.
+## Authentication
 
-- Sum up your professional value in a line.
+- The frontend requires access tokens from the backend for API calls
+- Make sure the backend server is running before attempting to use authenticated features
+- Without proper authentication, only the landing page will be accessible
+
+## Design Reference
+
+- The project/task requires designs for 3 pages
+- A starter design is provided for the first page to help you get started
+- Use this as a reference for implementing the remaining pages
